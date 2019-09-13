@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DEPROTECT</title>
+</head>
+
+<body>
+        <div align="center"> <h1  style="color: aliceblue; background: #000000;height: 50px;width: 80%;align-items: center">DEPROTECT</h1><br style="color: aliceblue"><a style="text-decoration: none; color: black" href="http://104.224.146.97">DEsign of PROTein and Enzyme by Computational Tools</a></br></div>
+        <div style="margin-left: 10%; line-height: 30px">
+                <h3>Consensus Analysis</h3>Input your sequence in fasta:
+                <form action="action.php" method="post">
+                               <textarea rows="6" cols="75" name="sequence" placeholder=">seqname
+KVYGRCELAAAMKRLGLDNYRGYSLGNWVCAAKFESNFNTHATNRNTDGSTDYGILQINSRWWCNDGRTPGSKNLCNIPCSALLSSDITASVNCAKKIASGGNGMNAWVAWRNRCKGTDVHAWIRGCRL" spellcheck="false"></textarea></div>
+					<div style="margin-left: 10%; margin-right: 10%; width: 80%; line-height: 30px;background-color: antiquewhite">E-vaule cutoff:
+                        <input id="evalue" type="text" name="evalue" />
+						<br>It's the E-value cutoff in blast search, default is 1e-5, you can change it depend on the homology of your sequence.</div>
+                        <div style="margin-left: 10%; margin-right: 10%; width: 80%; line-height: 30px;background-color: antiquewhite">Identity cutoff:
+                        <input id="identity" type="text" name="identity" />
+						<br>It's the identity cutoff when build the sub-database of homoglous thermosatble protein sequences for further alignment and consensus analysis.</div>
+                        <div style="margin-left: 10%; margin-right: 10%; width: 80%; line-height: 30px">
+							
+						<p ><input style="font-size:24px" type="submit" value="submit" name="submit_job"> <input style="font-size:24px" type="button" value="demo" </p></div>
+
+</form>
+	<div style="margin-left: 10%;line-height: 30px"> The work flow:</div>
+	<img style="margin-left: 10%; width: 50%" src="workflow.png">
+	<br><br><br><br>
+	<div style="text-align: center;margin-left: 10%;margin-right: 10%; text-align: center;color: dimgray;line-height: 30px">Design and produced by JinyuanSun<br>
+	This is a unpublished work, For commercial or academic use, please contact jinyuansun98_at_gmail.com</div>
+</body>
+</html>
