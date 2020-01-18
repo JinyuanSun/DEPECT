@@ -1,2 +1,2 @@
-# DEPROTECT
- DEsign of PROTein and Enzyme by Computational Tools
+# DETECT
+ DEsign of proTein and Enzymes by Computational Tools
