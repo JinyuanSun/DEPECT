@@ -1,0 +1,48 @@
+REMARK VINA RESULT:      -6.2      0.000      0.000
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: O_1  and  C_8 
+REMARK    2  A    between atoms: O_1  and  C_10 
+REMARK    3  A    between atoms: N_3  and  C_4 
+REMARK    4  A    between atoms: C_4  and  C_5 
+REMARK    5  A    between atoms: C_4  and  C_10 
+REMARK    6  A    between atoms: C_5  and  C_7 
+REMARK    7  A    between atoms: C_6  and  C_8 
+REMARK    8  A    between atoms: C_6  and  C_9 
+ROOT
+HETATM    1  C   LIG     1     -19.487  -4.920  11.657  1.00  0.00     0.320 C 
+ENDROOT
+BRANCH   1   2
+HETATM    2  N   LIG     1     -19.516  -3.765  10.756  1.00  0.00     0.092 N 
+HETATM    3  H   LIG     1     -19.210  -2.933  11.259  1.00  0.00     0.313 HD
+HETATM    4  H   LIG     1     -20.477  -3.583  10.466  1.00  0.00     0.313 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+HETATM    5  C   LIG     1     -20.687  -4.857  12.612  1.00  0.00     0.084 C 
+BRANCH   5   6
+HETATM    6  C   LIG     1     -20.604  -5.865  13.733  1.00  0.00    -0.056 A 
+HETATM    7  C   LIG     1     -19.377  -6.426  14.052  1.00  0.00     0.007 A 
+HETATM    8  C   LIG     1     -19.300  -7.357  15.087  1.00  0.00     0.001 A 
+HETATM    9  C   LIG     1     -20.450  -7.715  15.791  1.00  0.00     0.000 A 
+HETATM   10  C   LIG     1     -21.678  -7.141  15.459  1.00  0.00     0.001 A 
+HETATM   11  C   LIG     1     -21.755  -6.210  14.423  1.00  0.00     0.007 A 
+ENDBRANCH   5   6
+ENDBRANCH   1   5
+BRANCH   1  12
+HETATM   12  C   LIG     1     -19.545  -6.162  10.785  1.00  0.00     0.292 C 
+HETATM   13  O   LIG     1     -18.577  -6.834  10.454  1.00  0.00    -0.263 OA
+BRANCH  12  14
+HETATM   14  O   LIG     1     -20.846  -6.423  10.456  1.00  0.00    -0.320 OA
+BRANCH  14  15
+HETATM   15  C   LIG     1     -21.168  -7.805  10.262  1.00  0.00     0.178 C 
+BRANCH  15  16
+HETATM   16  C   LIG     1     -22.171  -8.228  11.325  1.00  0.00     0.026 C 
+BRANCH  16  17
+HETATM   17  C   LIG     1     -21.561  -9.219  12.313  1.00  0.00    -0.002 C 
+HETATM   18  C   LIG     1     -22.633  -9.950  13.105  1.00  0.00     0.005 C 
+ENDBRANCH  16  17
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+ENDBRANCH  12  14
+ENDBRANCH   1  12
+TORSDOF 8
