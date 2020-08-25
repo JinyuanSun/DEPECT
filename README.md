@@ -5,8 +5,8 @@ Enzymes are key to bioindustry and some proteins are very important like COVID-1
 # [enzde](https://github.com/JinyuanSun/DETECT/tree/master/enzde)
 combine autodock suites and modeller to design enzymes.  
 ### To run enzde scripts, make sure you have AutoDock suites and modeller installed!  
- - Install 
+ - Install  
  Edit the depect_enzde_config.py, change the ADT_PATH to where its installed.
- - Demo
+ - Demo  
  `./demo.sh`
 
