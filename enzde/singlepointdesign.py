@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-
+import depect_enzde_config
 import argparse
 import os
 import mutate_model_new
@@ -25,7 +25,7 @@ def get_parser():
 #dock = single_dock.run_dock(name)
 
 def vinalocalsearch(receptor,ligand,boxcfg):
-    ADT_PATH = "/home/jsun/MGLTools/MGLToolsPckgs/AutoDockTools/Utilities24/"
+    ADT_PATH = depect_enzde_config.ADT_PATH
     preparereceptorcmd = "pythonsh "+ADT_PATH+"prepare_receptor4.py -r "+receptor+" -o "+receptor.replace(".pdb",".pdbqt")+" -A checkhydrogens"
     os.system(preparereceptorcmd)
     vinalocalcmd = "vina --receptor "+receptor.replace(".pdb",".pdbqt") +" --ligand "+ligand+" --local_only --config "+boxcfg+" --out "+ligand.replace(".pdbqt","@_"+receptor+"_out.pdbqt")
@@ -76,7 +76,7 @@ if __name__ == '__main__':
     mode = args.mode
     boxcfg = args.boxcfg
     scorefilename = args.scorefile
-    ADT_PATH = "/home/jsun/MGLTools/MGLToolsPckgs/AutoDockTools/Utilities24/"
+    ADT_PATH = depect_enzde_config.ADT_PATH
     with  open(scorefilename,"w+") as scorefile:
         scorefile.write("#mutant"+","+"vina_affinity"+"\n")
         scorefile.close()
