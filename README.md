@@ -1,2 +1,4 @@
-# DETECT
- DEsign of proTein and Enzymes by Computational Tools
+# DEPECT
+ Design and Engineering of Proteins and Enzymes by Computational Tools
+# Install  
+'git clone '
