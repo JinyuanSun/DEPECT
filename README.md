@@ -12,9 +12,11 @@ combine autodock suites and modeller to design enzymes.
 
 # Doc
 ## mutfile format
+```
 12|LYS|A  
-|  |   |  
-|  |   |___Chain ID  
+|  |  |  
+|  |  |___Chain ID  
 |  |___Mutate to which AA (Here is to mutate to a LYS)   
-|___Residue Sequence Number in Pdb File      
+|___Residue Sequence Number in Pdb File   
+```
 
