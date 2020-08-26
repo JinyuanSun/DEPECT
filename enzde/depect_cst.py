@@ -235,7 +235,7 @@ if __name__ == '__main__':
         ligand = sys.argv[3]
         run_geo_cst(depectfilename,cstfilename,ligand)
     except IndexError:
-        print("Usage: python3 depect_geo.py depect_enzde.sc zlj.cst RPBE_ref.pdbqt")
+        print("Usage: python3 depect_cst.py depect_enzde.sc zlj.cst RPBE_ref.pdbqt")
     #try:
         #depectfilename = sys.argv[1]
         #cstfilename = sys.argv[2]
