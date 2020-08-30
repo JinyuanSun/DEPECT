@@ -11,12 +11,24 @@ combine autodock suites and modeller to design enzymes.
  `./demo.sh`
 
 # Doc
-## mutfile format
+#### mutfile format
 ```
 12|LYS|A  
 |  |   |  
 |  |   |___Chain ID  
 |  |___Mutate to which AA (Here is to mutate to a LYS)   
 |___Residue Sequence Number in Pdb File   
+```
+#### cstfile format
+```
+CST_NAME:atom1,atom2
+If the atom in the protein:
+protein|chain id|number of residue|atom name
+If the atom in the ligand:
+ligand|atom number
+```
+in the zlj.cst used in demo:  
+```
+distace1:protein|A|79|OG,ligand|13  
 ```
 
