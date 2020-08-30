@@ -31,4 +31,4 @@ in the zlj.cst used in demo:
 ```
 distace1:protein|A|79|OG,ligand|13  
 ```
-
+If the constraint is an angle, use 3 atoms, for a dihedral use 4 atoms.  
