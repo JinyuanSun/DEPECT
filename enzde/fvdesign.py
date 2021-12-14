@@ -237,7 +237,7 @@ class Pipeline:
         sd = round(df["total energy"].std(), 4)
         foldx_energy[mutation] = {"score": score, "SD": sd}
         with open("foldx_energy.txt", 'w+') as output:
-            output.write("\t".join([mutation, str(score), str(sd)]))
+            output.write("\t".join([mutation, str(score), str(sd)]) + "\n")
             output.close()
         # return ["_".join([wild, str(resNum), mutation]), score, sd]
 
@@ -245,8 +245,8 @@ class Pipeline:
         mutation, docking_score, foldx_energy = varlist
         os.mkdir(mutation)
         os.chdir(mutation)
-        os.mkdir("utils/build_model")
-        os.chdir("utils/build_model")
+        os.mkdir("build_model")
+        os.chdir("build_model")
         with open("WT_protein.pdb", "w+") as enzymefile:
             enzymefile.write(self.cachefile)
             enzymefile.close()
@@ -267,7 +267,7 @@ class Pipeline:
                 aff_arr[i] = affinity
                 i += 1
             with open("docking_energy.txt", 'w+') as output:
-                output.write("\t".join([mutation, str(round(aff_arr.mean(), 4)), str(round(aff_arr.std(), 4))]))
+                output.write("\t".join([mutation, str(round(aff_arr.mean(), 4)), str(round(aff_arr.std(), 4))]) + "\n")
         os.chdir("../")
         if self.verbose:
             print("[DEBUG]: ")
